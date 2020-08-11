@@ -12,11 +12,10 @@ body{
     background-size: cover;
     
 }
+
 .row-content{
     width: 103%;
     min-height: 85vh;
- 
-
 }
 .brand{
     font-weight: 700px;
@@ -26,19 +25,33 @@ body{
     text-align: center;
 }
 h1{
-    font-size: xx-large;
     color: floralwhite;
-    font-weight: 700px;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 p{
     color: floralwhite;
     font-weight: 400px;
 }
+@media (max-width: 576px) { 
+    h1{
+        font-size: 1.6rem;
+    }
+
+ }
 .content{
-    margin: 50px 80px 50px 80px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 10vmax;
+    margin-right: 10vmax;
     min-height: 250px;
 }
-
+@media (max-width: 576px) { 
+    .content{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+ }
 .main-con{
     background-color: white;
 }
@@ -71,9 +84,18 @@ p{
     background-color: white;
 }
 .test-content{
-    margin: 50px 80px 50px 80px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 10vmax;
+    margin-right: 10vmax;
     
 }
+@media (max-width: 576px) { 
+    .test-content{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+ }
 footer{
     height: 100px;
     background-color: #d1c4e9;
@@ -86,11 +108,11 @@ footer{
     font-weight: 300;
 }
 .test-con1{
-    background-color: #443f3f;
+    background-color: #34252F;
     color: floralwhite;
 }
 .test-con2{
-    background-color: red;
+    background-color: #E94F37;
     color: floralwhite;
 
 }
@@ -101,6 +123,11 @@ footer{
 
 }
 .copy{
-    margin-top: 25px;
     margin-bottom: 10px;
+}
+.footer-icon{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }

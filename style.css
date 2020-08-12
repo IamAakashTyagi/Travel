@@ -152,7 +152,7 @@ footer{
 }
 .about-foot{
     background-color: rgb(243, 88, 88);
-    border-radius: 5px;
+    border-radius: 4px;
     margin-left: 10px;
 }
 .about-row-con2{
@@ -214,3 +214,80 @@ footer{
 .icon-a{
     color:rgb(243, 88, 88);
 }  
+.contact-con{
+    background-color: white;
+    margin-left: 25px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    box-shadow:1px 1px 5px 0px rgba(50, 50, 50, 0.53);
+}
+.contact-row{
+    padding: 50px 100px 50px 100px;
+
+}
+.contact-head{
+    font-weight: 700;
+    margin-top: 20px;
+    color: rgba(66, 65, 65, 0.87);
+    font-size: 0.9em;
+
+}
+.contact-para{
+    color: rgb(114, 112, 112);
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.contact-img{
+    min-height: 250px;
+    margin-bottom: 20px;
+    border-color: #eb235cc0;;
+}
+.contact-btn {
+    background: #eb235c;
+    background-image: -webkit-linear-gradient(top, rgb(243, 88, 88), #f20051);
+    background-image: -moz-linear-gradient(top, rgb(243, 88, 88), #f20051);
+    background-image: -ms-linear-gradient(top, rgb(243, 88, 88), #f20051);
+    background-image: -o-linear-gradient(top, rgb(243, 88, 88), #f20051);
+    background-image: linear-gradient(to bottom, rgb(243, 88, 88), #f20051);
+    -webkit-border-radius: 4;
+    -moz-border-radius: 4;
+    border-radius: 4px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 7px 15px 7px 15px;
+    text-decoration: none;
+    margin-bottom: 5px;
+    border: 2px solid floralwhite;
+  }
+  /* for contact us only */
+  /* for tablet devices */
+  @media (max-width: 991.98px) { 
+    .contact-row{
+        padding: 50px 30px 50px 30px;
+       
+    }
+
+   }
+  /* for small mobile landscape mode */
+ @media (max-width: 767.98px) {
+    .contact-row{
+        padding: 50px 20px 50px 20px;
+       
+    }
+    .contact-con{
+        margin-left: 15px;
+    }
+
+ }
+  /* for small mobiles */
+  @media (max-width: 576.98px) { 
+    .contact-row{
+        padding: 50px 40px 50px 40px;
+       
+    }
+    .contact-con{
+        margin-left: 0px;
+    }
+ }
+ 

@@ -12,6 +12,10 @@ body{
     background-size: cover;
     
 }
+.dropdown-menu{
+    position:absolute;
+    }
+
 
 .row-content{
     width: 103%;
@@ -67,8 +71,8 @@ p{
 .main-btn{
     border-radius: 50px;
     background: white;
-    color: #d04c4c;
-    border-color: #d04c4c ;
+    color: rgb(243, 88, 88);
+    border-color: rgb(243, 88, 88) ;
     margin-top: 5px;
     margin-bottom: 20px;
     margin-left: 10px;
@@ -103,23 +107,27 @@ footer{
 .para-con{
     text-align:center;
     line-height: 1.4em;
-    padding: 5px;
+    /* padding: 5px; */
     margin: 10px;
     font-weight: 300;
+    margin-top: 0px;
 }
 .test-con1{
-    background-color: #34252F;
+    background-color: #676161;
     color: floralwhite;
+    padding-top: 10px;
 }
 .test-con2{
-    background-color: #E94F37;
+    background-color: rgb(243, 88, 88);
     color: floralwhite;
+    padding-top: 10px;
 
 }
 .test-head{
     text-align: center;
     font-weight: 500;
     margin-top: 5px;
+    margin-bottom: 0px;
 
 }
 .copy{
@@ -128,6 +136,81 @@ footer{
 .footer-icon{
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
+.about-head{
+    color: #676161;
+    margin: 20px 5px 10px 5px ;
+    border-bottom: 5px solid rgb(243, 88, 88);
+}
+.about-para{
+    color: rgb(82, 78, 78);
+    margin-bottom: 0px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.about-foot{
+    background-color: rgb(243, 88, 88);
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.about-row-con2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* .main-con{
+    border: 2px solid blue;
+    margin-left: 50px;
+} */
+.about-cont{
+    padding:0px 150px 0px 150px;
+}
+@media (max-width: 991.98px) { 
+    .about-cont{
+        padding: 10px;
+        padding-right: 40px;
+    }
+ }
+ .tick-con{
+     margin-bottom: 20px;
+ }
+ .bg{
+     background-color: #5b5e61;
+ }
+ .about-col{
+     margin-top: 40px;
+ }
+ .about-btn {
+    background: #eb235c;
+    background-image: -webkit-linear-gradient(top, rgb(243, 88, 88), #f20051);
+    background-image: -moz-linear-gradient(top, rgb(243, 88, 88), #f20051);
+    background-image: -ms-linear-gradient(top, rgb(243, 88, 88), #f20051);
+    background-image: -o-linear-gradient(top, rgb(243, 88, 88), #f20051);
+    background-image: linear-gradient(to bottom, rgb(243, 88, 88), #f20051);
+    -webkit-border-radius: 4;
+    -moz-border-radius: 4;
+    border-radius: 4px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 2px solid floralwhite;
+  }
+  
+  .about-btn:hover {
+    background: rgb(243, 88, 88);
+    background-image: -webkit-linear-gradient(top, rgb(243, 88, 88), #d9346b);
+    background-image: -moz-linear-gradient(top, rgb(243, 88, 88), #d9346b);
+    background-image: -ms-linear-gradient(top, rgb(243, 88, 88), #d9346b);
+    background-image: -o-linear-gradient(top, rgb(243, 88, 88), #d9346b);
+    background-image: linear-gradient(to bottom, rgb(243, 88, 88), #d9346b);
+    text-decoration: none;
+  }
+.icon-a{
+    color:rgb(243, 88, 88);
+}  

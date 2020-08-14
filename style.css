@@ -2,6 +2,13 @@ body{
     background-color: #ebeaec;
     font-family: 'Montserrat', sans-serif;
 }
+.brand{
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.nav-link{
+    font-weight: 500;
+}
 .header{
     width: 100%;
     height: 95vh;
@@ -12,19 +19,74 @@ body{
     background-size: cover;
     
 }
-.dropdown-menu{
-    position:absolute;
-    }
+.flex-containers{
+    width: 280px;
+    height: 260px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.flex-img{
+    width: 275px;
+    height: 255px;
+    
+}
+.sec-container{
+    margin-top: 80px;
+    margin-bottom: 80px;
 
-
+}
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 280px;
+    height: 260px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    box-shadow:1px 1px 5px 0px rgba(50, 50, 50, 0.53);
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: rgb(255, 255, 255);
+    transform: rotateY(180deg);
+    border-top-left-radius: 50px;
+  }
 .row-content{
     width: 103%;
     min-height: 85vh;
 }
-.brand{
-    font-weight: 700px;
-    font-size: 1.5em;
-}
+
 .cen{
     text-align: center;
 }
@@ -35,7 +97,7 @@ h1{
 }
 p{
     color: floralwhite;
-    font-weight: 400px;
+    font-weight: 400;
 }
 @media (max-width: 576px) { 
     h1{
@@ -43,25 +105,33 @@ p{
     }
 
  }
-.content{
+/* .content{
     margin-top: 80px;
     margin-bottom: 80px;
     margin-left: 10vmax;
     margin-right: 10vmax;
     min-height: 250px;
-}
-@media (max-width: 576px) { 
+} */
+/* for tablet */
+/* @media (max-width: 991.87px) { 
+   .content{
+       margin-left: 0;
+       margin-right: 0;
+   }
+ } */
+/* @media (max-width: 576px) { 
     .content{
         margin-left: 15px;
         margin-right: 15px;
     }
- }
+ } */
 .main-con{
     background-color: white;
+    box-shadow:1px 1px 5px 0px rgba(50, 50, 50, 0.53);
 }
 .main-con-head{
     color: black;
-    margin: 10px;
+    margin-top: 10px;
 }
 .main-con-para{
     color: gray;
@@ -69,18 +139,18 @@ p{
 }
 
 .main-btn{
-    border-radius: 50px;
     background: white;
     color: rgb(243, 88, 88);
     border-color: rgb(243, 88, 88) ;
     margin-top: 5px;
     margin-bottom: 20px;
     margin-left: 10px;
- 
 } 
-.main-img{
+
+/* .main-img{
     padding: 0px;
-}   
+    box-shadow:1px 1px 5px 0px rgba(50, 50, 50, 0.53);
+}    */
 .testimonial{
     width: 100%;
     border: 1px solid white;
@@ -94,6 +164,13 @@ p{
     margin-right: 10vmax;
     
 }
+/* @media (max-width: 991.87px) { 
+    .test-content{
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+ } */
+/* for mobile screen */
 @media (max-width: 576px) { 
     .test-content{
         margin-left: 15px;
@@ -102,7 +179,7 @@ p{
  }
 footer{
     height: 100px;
-    background-color: #d1c4e9;
+    background-color: #a2a1a2;
 }
 .para-con{
     text-align:center;
@@ -116,11 +193,15 @@ footer{
     background-color: #676161;
     color: floralwhite;
     padding-top: 10px;
+    box-shadow:1px 1px 5px 0px rgba(50, 50, 50, 0.53);
+    margin-bottom: 15px;
 }
 .test-con2{
     background-color: rgb(243, 88, 88);
     color: floralwhite;
     padding-top: 10px;
+    box-shadow:1px 1px 5px 0px rgba(50, 50, 50, 0.53);
+    margin-bottom: 15px;
 
 }
 .test-head{
@@ -131,11 +212,11 @@ footer{
 
 }
 .copy{
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 .footer-icon{
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -184,11 +265,11 @@ footer{
  }
  .about-btn {
     background: #eb235c;
-    background-image: -webkit-linear-gradient(top, rgb(243, 88, 88), #f20051);
-    background-image: -moz-linear-gradient(top, rgb(243, 88, 88), #f20051);
-    background-image: -ms-linear-gradient(top, rgb(243, 88, 88), #f20051);
-    background-image: -o-linear-gradient(top, rgb(243, 88, 88), #f20051);
-    background-image: linear-gradient(to bottom, rgb(243, 88, 88), #f20051);
+    background-image: -webkit-linear-gradient(top, rgb(243, 88, 88), #f1135d);
+    background-image: -moz-linear-gradient(top, rgb(243, 88, 88), #f1135d);
+    background-image: -ms-linear-gradient(top, rgb(243, 88, 88), #f1135d);
+    background-image: -o-linear-gradient(top, rgb(243, 88, 88), #f1135d);
+    background-image: linear-gradient(to bottom, rgb(243, 88, 88), #f1135d);
     -webkit-border-radius: 4;
     -moz-border-radius: 4;
     border-radius: 4px;
@@ -204,6 +285,7 @@ footer{
   
   .about-btn:hover {
     background: rgb(243, 88, 88);
+    color: #ffffff;
     background-image: -webkit-linear-gradient(top, rgb(243, 88, 88), #d9346b);
     background-image: -moz-linear-gradient(top, rgb(243, 88, 88), #d9346b);
     background-image: -ms-linear-gradient(top, rgb(243, 88, 88), #d9346b);
@@ -240,7 +322,8 @@ footer{
 .contact-img{
     min-height: 250px;
     margin-bottom: 20px;
-    border-color: #eb235cc0;;
+    border-color: #eb235cc0;
+    box-shadow:1px 1px 5px 0px rgba(50, 50, 50, 0.53);
 }
 .contact-btn {
     background: #eb235c;
@@ -290,4 +373,10 @@ footer{
         margin-left: 0px;
     }
  }
+ .fa-style {
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+
  
